@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  margin: 0;
+}
+
+.brand {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  background-color: aliceblue;
+}
+
+.company {
+  margin-top: 35px;
+}
+.tv {
+  height: 95px;
+  padding-left: 20px;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: #2d0979;
+  border: 2px solid white;
+  height: 300px;
+}
+
+.search {
+  background-color: white;
+  border: 3px solid rgb(236, 242, 242);
+  border-radius: 50px;
+  font-size: 1.1rem;
+  padding: 1rem;
+  color: rgb(8, 6, 6);
+  width: 700px;
+  margin-top: 110px;
+}
+
+.search ::placeholder {
+  color: white;
+}
+
+.search:focus {
+  outline: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  width: 287px;
+  margin: 0.6rem;
+  background-color: #2d0979;
+  box-shadow: 0 4px 5px black;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.movie img {
+  width: 100%;
+}
+
+.movie-info {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 1px;
+}
+
+.movie-info span {
+  background-color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.movie-info span.green {
+  color: green;
+}
+
+.movie-info span.orange {
+  color: rgb(225, 153, 20);
+}
+
+.movie-info span.red {
+  color: red;
+}
+
+.overview {
+  background-color: azure;
+  color: #2d0979;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
